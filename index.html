@@ -1,71 +1,104 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Vivamos Prom2021</title>
-        <link id="favicon" rel="shortcut icon" href="multimedia/icono.gif" type="image/png"/>
-        <link rel="apple-touch-icon" sizes="194x194" href="multimedia/icono.gif" type="image/png"/>
-        <style type="text/css">
-            body{font-family: "Calibri"; margin-left:8%; margin-right:8%; margin-bottom:5%; margin-top:3%; }
-            div {column-count: 2}
-            h1{text-align:center; font-size: 1.3em; background-color:#FFAA65; width:100%; }
-            h2{text-align:justify; font-size: 1em; background-color:#BBbb65; width:100%; font-weight: normal; }
-            h6{text-align:justify; font-size: 0.95em; background-color:#BBbb65; width:100%; font-weight: normal; }
-            a:link, a:visited, a:active {text-decoration:none; color:black;}
-            table{ font-size: 0.9em;}
-   </style>
-        <script type="text/javascript">
-     alert("Atención, importante:\n En esta aplicación, en conclusión, se da una temática fresca y básica, donde puedes acceder a la información que necesites y repasar más didácticamente, separada en grupos de asignaturas, así:\n * Matemáticas: Aritmética, Geometría, Medidas, Estadística y Probabilidad básica. \n* Español: Comunicación, Fonética, Ortografía, Semántica, Literatura y Técnicas de Estudio. \n * CEP y Ciencias Sociales: Población mundial, Economía, Política Elemental e Ideas de Desarrollo.\n * Ciencias Naturales: La vida, Teoría Celular, Metabolismo, Genética, Seres vivos y Tiempo Geológico.\n * Inglés básico: Saludos, colores, números, verbos, nombres, sustantivos y oraciones.\n * Física: Energía, Luz, Espejos y lentes, colores, calor, sonido, electricidad, magnetismo, fuerzas y ondas.\n* Química: La materia, química inorgánica y orgánica, Método científico y Protección al Medio Ambiente.\n* Tecnología e Informática: El ordenador, electro-house, Hardware, Software, Máquinas simples y compuestas, Medios de transporte y comunicación, WWW,  Móviles, FTP, Diseño Gráfico, Multimedia en la Web y Gestores de contenido.\n * Filosofía: Concepto, ramas y principales exponentes.  \n * Historia mundial y de Colombia: Prehistoria, Edad Antigua, Media, Moderna, Contemporánea, Descubrimiento, Conquista y Colonia de América, Virreinato e Independencia de la Nueva Granada, Era Republicana. \n * Geografía: Paisajes y tipos, las Placas Tectónicas, Erosión, Relieves continentales, costeros y marinos, climas, Mapas, planos y croquis, escalas, Coordenadas, Altitud y curvas de nivel, Puntos cardinales, Horas internacionales, Gráficos, Climograma y Ciudades importantes de la región y del mundo. \n \n Además de ello, cuenta con fascículos anexos de la Tabla periódica Química, los tres lenguajes de programación más importantes y las culturas del mundo; ésto de forma offline, y el apoyo académico online requiere de Internet para su funcionamiento.");
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página personal</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="keywords" content="colucas, suaita, escuela, santander">
+		<meta name="description" content="Esta Página resalta el valor de Colucas Suaita">
+		<link rel="icon" type="image/x-icon" href="me.jpg">
+		<meta name="author" content="Daniel Eduardo Naranjo Garzón"/>
+		<meta name="copyright" content="Daniel Eduardo Naranjo Garzón"/>
+		<meta name="generator" content="Brackets"/>
+		<meta name="language" content="es"/>
+		<meta name="revisit-after" content="1 month"/>
+		<meta name="robots" content="index, follow"/>
+		<meta http-equiv="Refresh" content="60" />
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../responsive-nav.css"><![endif]-->
+		<!--[if gt IE 8]><!-->
+
+  <!-- Cargar MathJax desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async ></script>
+
+  <!-- Configuración opcional de MathJax -->
+
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']],
+					displayMath: [['$$', '$$'], ['\\[', '\\]']],
+					macros: { R: '{\\mathbb{R}}',  // Ejemplo de comando personalizado
+						        N: '{\\mathbb{N}}'   // Otro comando personalizado
+					} },
+				options: { renderActions: {
+						findScript: [10, function (doc) { 
+							if (doc.isSVG) {
+								doc.scriptData.push(['svg', 1]);
+							}  }, ''] } } };
+		</script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    header, footer { background: #f0f0f0; padding: 10px; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 10px; }
+    nav a { text-decoration: none; color: #333; }
+	iframe { width: 100vh; height: 75vh; border: none; display: inline-block; }
+        .iframe-container { display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daniedmath en Internet</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca</a></li>
+        <li><a href="#cosas">Elementos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Sección de inicio</h2>
+      <p>Soy Daniel Naranjo, matemático en proceso UIS. Este será mi blog para este futuro incierto.</p>
+    </section>
+
+    <section id="acerca">
+      <h2>Sección Acerca</h2>
+      <p>Información sobre el sitio y su propósito.</p>
+    </section>
+
+    <section id="cosas">
+      <h2>Sección Cosas</h2>
+      <p>Tengo este libro en Internet:</p>
+		<!---
+			<iframe src="https://tinyurl.com/yl8yzwbd" allowfullscreen loading="lazy" referrerpolicy="no-referrer" ></iframe>
+		--->
+<div class="iframe-container">
+    <iframe src="https://tinyurl.com/29pqev83" allowfullscreen loading="lazy" referrerpolicy="no-referrer" width='75%' height='100%'></iframe>
+</div>
+    </section>
+
+    <section id="contacto">
+      <h2>Sección Contacto</h2>
+      <p>Aquí irían los datos de contacto o un formulario.</p>
+		Dirígete a <a href='filestin.html'> este link</a>. $2$
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mi Sitio Web</p>
+  </footer>
+
+  <script>
+    console.log('Página cargada exitosamente');
   </script>
-    </head>
-<body bgcolor="tan">
-<meta charset="utf-8">
-<h1><marquee><img src="multimedia/icono.gif" width="4%">  Vivamos Prom2021 Colucas para PC, enciclopedia actualizada offline y básica del conocimiento. Menú principal de asignaturas del conocimiento y complementos didácticos.</marquee>
-</h1>
-    
-<h2>    
-<table bgcolor="orange" width="100%"><tr>
-<td width="8%"><b>Herramientas útiles</b><ul> 
-    <li><a href="index_archivos/math.html" target="_blank">Matemáticas básicas.</a></li>
-    <li><a href="index_archivos/lengua.html" target="_blank">Español básico.</a></li>
-    <li><a href="index_archivos/cep.html" target="_blank">CEP y Ciencias Sociales básico.</a></li>
-    <li><a href="index_archivos/naturales.html" target="_blank">Ciencias Naturales básicas.</a></li>
-    <li><a href="index_archivos/ingles.html" target="_blank">Inglés.</a></li>
-    <li><a href="index_archivos/fisica.html" target="_blank">Fisica.</a></li>
-    <li><a href="index_archivos/quimica.html" target="_blank">Quimica.</a></li>
-    <li><a href="index_archivos/infortec.html" target="_blank">Infortec</a></li>
-    <li><a href="index_archivos/filosofia.html" target="_blank">Inicio a la Filosofía.</a></li>
-    <li><a href="index_archivos/historia.html" target="_blank">Historia universal y de Colombia</a></li>
-    <li><a href="index_archivos/geografia.html" target="_blank">Geografía.</a></li>
-    
-    
-    
-</ul></td>
-    
-<td width="6%" bgcolor="skyblue"><b>Kit de herramientas.</b><ul>
-<li><a href="index_archivos/herramientas/tabla_periodica.svg" target="_blank">Tabla periódica química.</a> </li>
-    <li><a href="index_archivos/lenguas_prg.html" target="_blank">Lenguajes de programación.</a></li>
-    <li><a href="index_archivos/culturas.html" target="_blank">Culturas del mundo.</a></li>
-<li><a href="index_archivos/herramientas/resumen_css_y_html.html" target="_blank">Resumen CSS y HTML.</a></li></ul>
-    Apoyo académico online.<ul>
-<li><a href="https://www.bing.com/" target="_blank">Navegador Bing.</a></li>
-<li><a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Enciclopedia Wikipedia.</a></li>
-<li><a href="http://www.uptodown.com/" target="_blank">Tienda de Apps Gratis Uptodown.<br>Para Windows y Android.</a></li>
-<li><a href="https://www.youtube.com/" target="_blank">Multimedia Youtube.</a></li>
-<li><a href="https://www.facebook.com/" target="_blank">Red Facebook.</a></li>
-<li><a href="https://www.msn.com/es-co/" target="_blank">Actualidad global.</a></li>
-</ul></td>
 
-</tr>
-    </table>
-
-    
-    
-    
-    
-</h2>
-   <h6><marquee><img src="multimedia/icono.gif" width="2%">
-    Debemos tener en cuenta que para un correcto funcionamiento de la app, es necesario aplicar las siguientes herramientas:    Primero para ampliar la pantalla, usa los botones Ctrl, +, y para reducirla, usa la combinación Ctrl, -. Ahora, cabe aclarar que las secciones de programación de CSS, HTML y JAVASCRIPT cuenta con ciertos enlaces, puedes usarlos comodamente.
-       </marquee></h6>
-    </body>
+</body>
 </html>
