@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfica y = x³</title>
+    <!-- ÚNICAMENTE cargamos TikZJax (él carga MathJax internamente) -->
+    <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+</head>
+<body style="text-align: center; font-family: sans-serif;">
+
+    <h2>Gráfica de y = x³ con TikZJax</h2>
+
+    $$
+    \begin{tikzpicture}[scale=0.6]
+        \draw[->, thick] (-3.5,0) -- (3.5,0) node[right] {$x$};
+        \draw[->, thick] (0,-32) -- (0,32) node[above] {$y$};
+        \draw[blue, thick, domain=-3:3, samples=100] plot (\x, {\x*\x*\x});
+        \node[blue] at (2, 10) {$y=x^3$};
+    \end{tikzpicture}
+    $$
+
+</body>
+</html>
