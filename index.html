@@ -43,6 +43,7 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#acerca">Sobre mí</a></li>
         <li><a href="#cosas">Publicaciones</a></li>
+        <li><a href="#teoremas">Teoremas</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -69,6 +70,34 @@
 <div class="iframe-container">
     <iframe src="https://tinyurl.com/29pqev83" allowfullscreen loading="lazy" referrerpolicy="no-referrer" width='75%' height='100%'></iframe>
 </div>
+    </section>
+
+    <section id="teoremas">
+      <h2>Teoremas</h2>
+      <p>En esta sección plasmo algunos teoremas que considero fundamentales y que quiero tener presentes.</p>
+      
+      <fieldset>
+        <legend>Teorema Fundamental de la Aritmética</legend>
+        
+        <p><strong>Enunciado:</strong> Todo entero positivo $n > 1$ puede escribirse de manera única como producto de primos, salvo el orden de los factores. Es decir,</p>
+        <p>$$\displaystyle n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}, \quad \text{donde } p_i \in \mathbb{P}, \, \alpha_i \in \N, \, k \in \N.$$</p>
+        
+        <details>
+          <summary>Demostración</summary>
+          <p><strong>Existencia:</strong> Por inducción fuerte. Para $n=2$, es trivial. Si todo $m < n$ tiene factorización prima y $n$ es primo, estamos. Si $n$ es compuesto, $n = ab$ con $1 < a,b < n$. Por hipótesis inductiva, $a$ y $b$ tienen factorización prima, luego $n$ también.</p>
+          <p><strong>Unicidad:</strong> Si $n = p_1 \cdots p_r = q_1 \cdots q_s$, entonces $p_1 \mid q_1 \cdots q_s$. Por el lema de Euclides, $p_1 \mid q_j$ para algún $j$. Como $q_j$ es primo, $p_1 = q_j$. Cancelando y repitiendo el argumento, obtenemos $r=s$ y los factores coinciden salvo orden. <span style="float: right;">$\blacksquare$</span></p>
+        </details>
+        
+        <button onclick="document.getElementById('dialog-teorema').showModal()">Ver comentario</button>
+        
+        <dialog id="dialog-teorema">
+          <p><strong>Comentario:</strong> Este teorema establece que los números primos son los "ladrillos básicos" de $\N$. La unicidad de la factorización no es obvia: hay anillos donde falla (ej. $\Z[\sqrt{-5}]$). En $\R$, todo $x > 0$ puede expresarse como $x = e^{\ln x}$, análogo continuo de la factorización prima.</p>
+          <img src="https://picsum.photos/300/150" alt="Imagen aleatoria">
+          <form method="dialog">
+            <button>¡Entendido!</button>
+          </form>
+        </dialog>
+      </fieldset>
     </section>
 
     <section id="contacto">
