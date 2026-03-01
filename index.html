@@ -20,39 +20,24 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="../../responsive-nav.css"><![endif]-->
 		<!--[if gt IE 8]><!-->
 
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Configuración de MathJax (debe ir antes de cargar MathJax) -->
+  <script src="mathjax-config.js"></script>
+
   <!-- Cargar MathJax desde CDN -->
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async ></script>
-
-  <!-- Configuración opcional de MathJax -->
-
-		<script>
-			MathJax = {
-				tex: {
-					inlineMath: [['$', '$'], ['\\(', '\\)']],
-					displayMath: [['$$', '$$'], ['\\[', '\\]']],
-					macros: { R: '{\\mathbb{R}}',  // Ejemplo de comando personalizado
-						        N: '{\\mathbb{N}}'   // Otro comando personalizado
-					} },
-				options: { renderActions: {
-						findScript: [10, function (doc) {
-							if (doc.isSVG) {
-								doc.scriptData.push(['svg', 1]);
-							}  }, ''] } } };
-		</script>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    header, footer { background: #f0f0f0; padding: 10px; }
-    nav ul { list-style: none; padding: 0; display: flex; gap: 10px; }
-    nav a { text-decoration: none; color: #333; }
-	iframe { width: 100vh; height: 75vh; border: none; display: inline-block; }
-        .iframe-container { display: flex; justify-content: center; align-items: center; height: 100vh; }
-
-  </style>
 </head>
 <body>
 
   <header>
     <h1>Daniel Eduardo Naranjo Garzón</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -80,17 +65,6 @@
 <div class="iframe-container">
     <iframe src="https://cdn.jsdelivr.net/gh/daniedmath/libro_oficial_matematicas@main/main.pdf" referrerpolicy="no-referrer" width='75%' height='100%'></iframe>
 </div>
-<!---
-<object
-  data="https://raw.githubusercontent.com/daniedmath/libro_oficial_matematicas/main/main.pdf"
-  type="application/pdf"
-  width="100%"
-  height="800px">
-  <p>Tu navegador no soporta visualización de PDFs.
-     <a href="https://raw.githubusercontent.com/daniedmath/libro_oficial_matematicas/main/main.pdf">Descargar PDF</a>
-  </p>
-</object>
---->
 
 <div class="iframe-container">
     <iframe src="https://tinyurl.com/29pqev83" allowfullscreen loading="lazy" referrerpolicy="no-referrer" width='75%' height='100%'></iframe>
@@ -108,9 +82,7 @@
     <p>© 2025 Daniel Eduardo Naranjo Garzón</p>
   </footer>
 
-  <script>
-    console.log('Página cargada exitosamente');
-  </script>
+  <script src="main.js"></script>
 
 </body>
 </html>
