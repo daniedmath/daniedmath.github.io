@@ -6,8 +6,8 @@
   <title>Mi Playlist | Daniel Eduardo Naranjo Garzón</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<meta name="keywords" content="música, playlist, spotify, daniedmath">
-		<meta name="description" content="Mi playlist personal de Spotify">
+		<meta name="keywords" content="música, playlist, spotify, youtube, videos, daniedmath">
+		<meta name="description" content="Mis playlists personales de Spotify y YouTube">
 		<link rel="icon" type="image/x-icon" href="me.jpg">
 		<meta name="author" content="Daniel Eduardo Naranjo Garzón"/>
 		<meta name="copyright" content="Daniel Eduardo Naranjo Garzón"/>
@@ -40,16 +40,23 @@
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="my_playlist.html">Mi Playlist</a></li>
+        <li class="dropdown">
+          <a href="#">Multimedia ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="my_playlist.html">Mi Playlist</a></li>
+            <li><a href="socialnetworks.html">Redes Sociales</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="playlist">
-      <h2>Mi Playlist</h2>
-      <p>Una selección de música que disfruto escuchar.</p>
+      <h2>Mis Playlists</h2>
+      <p>Una selección de música y videos que disfruto escuchar y ver.</p>
       
+      <h3>Spotify</h3>
       <div class="iframe-container" style="max-width: 800px; margin: 0 auto;">
         <iframe 
           data-testid="embed-iframe" 
@@ -62,6 +69,11 @@
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
           loading="lazy">
         </iframe>
+      </div>
+
+      <h3>YouTube</h3>
+      <div class="iframe-container" style="max-width: 800px; margin: 0 auto;">
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/yVtkvuKpKf8?list=PLf6VcsDZqZbHnAM3lAUuqXk1Uzeo5TdNq" title="Franco Battiato, Alice - I Treni Di Tozeur" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
   </main>
