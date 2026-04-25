@@ -1,1 +1,19 @@
 theme: jekyll-theme-minimal
+
+# Configuración SEO
+title: "Daniel Eduardo Naranjo Garzón | Matemático UIS"
+description: "Blog personal de Daniel Eduardo Naranjo Garzón, estudiante de matemáticas en la UIS. Comparte recursos matemáticos, teoremas fundamentales, publicaciones académicas y materiales de estudio."
+author: "Daniel Eduardo Naranjo Garzón"
+lang: es-CO
+url: "https://daniedmath.github.io"
+baseurl: ""
+
+# Palabras clave para SEO
+keywords: "Daniel Eduardo Naranjo Garzón, Daniel Naranjo, daniedmath, matemáticas, UIS, Universidad Industrial de Santander, blog personal, teoremas, recursos matemáticos"
+
+# Redes sociales
+social:
+  github: daniedmath
+  linkedin: daniedmath
+  twitter: daniedmath
+  youtube: danied1405
