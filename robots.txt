@@ -1,0 +1,12 @@
+# robots.txt para daniedmath.github.io
+# Permite a todos los crawlers acceder al sitio
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://daniedmath.github.io/sitemap.xml
+
+# Disallow specific paths if needed
+# Disallow: /private/
+# Disallow: /admin/
