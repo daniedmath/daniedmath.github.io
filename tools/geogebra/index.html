@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>GeoGebra Offline</title>
+				<style>
+					/* Estilos opcionales para tu página */
+					body { font-family: sans-serif; }
+					#ggb-element { width: 90%; height: 600px; margin: 0 auto; }
+				</style>
+			</head>
+			<body>
+				
+				<!-- 1. Contenedor donde se cargará el applet -->
+				<div id="ggb-element"></div>
+				
+				<!-- 2. Incluir la librería de GeoGebra (ruta local) -->
+				<script src="GeoGebra/deployggb.js"></script>
+				
+				<script>
+					// 3. Configurar y lanzar el applet
+					window.onload = function() {
+					var params = {
+					"width": 800, 
+					"height": 600,
+					"showToolBar": true,
+					"showAlgebraInput": true,
+					"showMenuBar": true,
+					"filename": "../mi_archivo.ggb"
+					};
+					
+					var applet = new GGBApplet(params, true);
+					
+					// 4. Indicar la ruta local de los archivos del bundle
+					applet.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/');
+					
+					// 5. Insertar el applet en el contenedor
+					applet.inject('ggb-element');
+					};
+				</script>
+				
+			</body>
+		</html>
