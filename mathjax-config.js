@@ -43,24 +43,12 @@ MathJax = {
       sigma: '{\\varsigma}',  // Sigma variable
 
       // Operadores matemáticos
-      lim: '{\\lim}',         // Límite
-      Lim: '{\\lim}',         // Límite mayúscula
-      sin: '{\\sin}',         // Seno
-      cos: '{\\cos}',         // Coseno
-      tan: '{\\tan}',         // Tangente
-      cot: '{\\cot}',         // Cotangente
-      sec: '{\\sec}',         // Secante
-      csc: '{\\csc}',         // Cosecante
-      arcsin: '{\\arcsin}',   // Arco seno
-      arccos: '{\\arccos}',   // Arco coseno
-      arctan: '{\\arctan}',   // Arco tangente
-
-      // Límites y sumatorias
-      sum: '{\\sum}',         // Suma
-      prod: '{\\prod}',       // Producto
-      coprod: '{\\coprod}',   // Coproducto
-      bigoplus: '{\\bigoplus}', // Suma directa
-      bigotimes: '{\\bigotimes}', // Producto directo
+      // NOTA: \lim, \sin, \cos, \tan, \cot, \sec, \csc, \arcsin, \arccos,
+      // \arctan, \sum, \prod, \coprod, \bigoplus y \bigotimes ya existen en
+      // MathJax por defecto. Redefinirlos como {\lim}, {\sin}, etc. provoca una
+      // recursión infinita ("maximum macro substitution count exceeded"), por lo
+      // que no deben definirse aquí.
+      Lim: '{\\lim}',         // Límite mayúscula (\Lim no existe por defecto)
 
       // Derivadas e integrales
       dd: ['{\\frac{\\mathrm{d}#1}{\\mathrm{d}#2}}', 2],  // Derivada total
@@ -99,9 +87,8 @@ MathJax = {
       ceil: ['{\\left\\lceil#1\\right\\rceil}', 1],   // Techo
 
       // Física matemática
-      hbar: '{\\hbar}',                // h barra
-      partial: '{\\partial}',          // Parcial
-      nabla: '{\\nabla}'              // Nabla
+      // NOTA: \hbar, \partial y \nabla ya existen en MathJax por defecto;
+      // redefinirlos como {\hbar}, {\partial} o {\nabla} provocaría recursión infinita.
     }
   },
 
@@ -153,6 +140,8 @@ MathJax = {
 
   // Configuración de inicio
   startup: {
-    typeset: false // Renderizado bajo demanda
+    // IMPORTANTE: si es false, MathJax NO procesa la página al cargar y solo
+    // se renderiza si se llama a MathJax.typesetPromise() manualmente.
+    typeset: true // Renderiza las fórmulas automáticamente al cargar la página
   }
 };
